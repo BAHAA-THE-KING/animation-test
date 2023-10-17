@@ -4,6 +4,7 @@ import NavBar from './components/navbar/NavBar';
 import { Col, Container, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
 import Footer from './components/Footer/Footer';
+import Nums from './components/Nums/Nums';
 
 function App() {
   return (
@@ -40,14 +41,20 @@ function App() {
             style={{
               backgroundImage: "url(background/final-background-web-png.png)",
               backgroundSize: "cover",
+              backgroundPosition: "bottom",
               position: "relative",
               marginTop: "19%",
             }}>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{ flex: "1" }}>
-              <Col className='d-flex flex-column justify-content-end'>
-                <Footer />
+              <Col className='d-flex flex-column justify-content-end align-items-stretch'>
+                <Row>
+                  <Nums />
+                </Row>
+                <Row>
+                  <Footer />
+                </Row>
               </Col>
             </Row>
           </Col>
