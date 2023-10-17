@@ -5,6 +5,8 @@ import { Col, Container, Navbar, Row } from 'react-bootstrap';
 
 function App() {
   return (
+    <>
+    <NavBar />
     <Container
       className='
                 text-center
@@ -28,7 +30,7 @@ function App() {
           flex: "1",
           backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
           backgroundSize: "cover",
-        }}><Col style={{zIndex: "100"}}><NavBar /></Col></Row>
+        }}><Col></Col></Row>
       <Row style={{ flex: "3" }}>
         <Col
           className='d-flex flex-column justify-content-start alidn-items-strech'
@@ -36,7 +38,7 @@ function App() {
             backgroundImage: "url(background/final-background-web-png.png)",
             backgroundSize: "cover",
             position: "relative",
-            marginTop: "19%"
+            marginTop: "19%",
           }}>
           <Row style={{ flex: "1" }}><Col>asd</Col></Row>
           <Row style={{ flex: "1" }}><Col>asd</Col></Row>
@@ -44,6 +46,7 @@ function App() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 
