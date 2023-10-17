@@ -7,6 +7,7 @@
   padding-bottom: 0.5rem;
   font-weight: bold;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .buttons button:first-child {
   background: linear-gradient(to right, #4faef3, #7a58f1);
