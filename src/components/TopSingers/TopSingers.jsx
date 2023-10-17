@@ -19,7 +19,10 @@ function TopSingers() {
                         borderRadius: "50%",
                         lineHeight: "190px",
                         backgroundColor: "white",
-                        backgroundImage: "url(assets/Landing (web) - 1-image5.png)"
+                        backgroundImage: "url('assets/Landing (web) - 1-image5.png')",
+                        backgroundSize: "contain",
+                        backgroundPosition: "32px",
+                        filter: "drop-shadow(-50px 0 6px #AAA)"
                      }}
                   >
                      {e}

@@ -46,7 +46,7 @@ function App() {
               marginTop: "19%",
             }}>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-            <Row style={{ flex: "1" }}>
+            <Row style={{}}>
               <Row style={{ height: "min-content" }}>
                 <TopSingers />
               </Row>
