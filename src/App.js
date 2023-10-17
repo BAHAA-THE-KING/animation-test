@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
+import TopSingers from './components/TopSingers/TopSingers';
 
 function App() {
   return (
@@ -46,7 +47,11 @@ function App() {
               marginTop: "19%",
             }}>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-            <Row style={{ flex: "1" }}><Col>asd</Col></Row>
+            <Row style={{ flex: "1" }}>
+              <Row style={{ height: "min-content" }}>
+                <TopSingers />
+              </Row>
+            </Row>
             <Row style={{ flex: "1" }}>
               <Col className='d-flex flex-column justify-content-end align-items-stretch'>
                 <Row>
