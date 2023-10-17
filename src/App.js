@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/navbar/NavBar';
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
+import Songs from './components/songs/Songs';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
 import TopSingers from './components/TopSingers/TopSingers';
@@ -34,7 +35,7 @@ function App() {
             flex: "1",
             backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
             backgroundSize: "cover",
-          }}><Col></Col></Row>
+          }}></Row>
         <Row style={{ flex: "3" }}>
           <Col
             className='d-flex flex-column justify-content-start alidn-items-strech'
@@ -45,8 +46,7 @@ function App() {
               marginTop: "19%",
             }}>
             <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-38%" }}><Landing /></Col></Row>
-            {/* <Row style={{ flex: "1" }}><Col>asd</Col></Row> */}
-            <Row style={{ flex: "1" }}><Col>asd</Col></Row>
+            <Row style={{ flex: "1" }}><Col><Songs /></Col></Row>
             <Row style={{}}>
               <Row style={{ height: "min-content" }}>
                 <TopSingers />
