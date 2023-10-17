@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
+import Landing from './components/navbar/landing/Landing';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           flex: "1",
           backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
           backgroundSize: "cover",
-        }}><Col></Col></Row>
+        }}><Col><Landing /></Col></Row>
       <Row style={{ flex: "3" }}>
         <Col
           className='d-flex flex-column justify-content-start alidn-items-strech'
