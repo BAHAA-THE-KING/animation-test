@@ -49,6 +49,18 @@ function App() {
             <Row style={{ flex: "1" }}>
               <Col className='d-flex flex-column justify-content-end align-items-stretch'>
                 <Row>
+                  <span
+                    className='
+                              position-absolute
+                              text-start
+                              '
+                    style={{
+                      marginTop: "100px",
+                      color: "#020617",
+                      fontSize: "50px"
+                    }}>
+                    statistics :
+                  </span>
                   <Nums />
                 </Row>
                 <Row>
