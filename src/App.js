@@ -1,12 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
-<<<<<<< HEAD
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
-=======
-import { Col, Container, Row } from 'react-bootstrap';
->>>>>>> 6bade84fda65c268395392f065eae79298542893
 
 function App() {
   return (
@@ -25,7 +21,6 @@ function App() {
       }}
       fluid
     >
-      <NavBar />
       <Row
         className='
                   position-fixed
@@ -36,14 +31,7 @@ function App() {
           flex: "1",
           backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
           backgroundSize: "cover",
-<<<<<<< HEAD
         }}><Col><Landing /></Col></Row>
-=======
-        }}>
-        <Col>
-        </Col>
-      </Row>
->>>>>>> 6bade84fda65c268395392f065eae79298542893
       <Row style={{ flex: "3" }}>
         <Col
           className='d-flex flex-column justify-content-start alidn-items-strech'
