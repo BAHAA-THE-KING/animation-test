@@ -3,50 +3,55 @@ import './App.css';
 import NavBar from './components/navbar/NavBar';
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-    <NavBar />
-    <Container
-      className='
+      <NavBar />
+      <Container
+        className='
                 text-center
                 d-flex
                 flex-column
                 justify-content-start
                 align-items-strech
                 '
-      style={{
-        height: "500vh"
-      }}
-      fluid
-    >
-      <Row
-        className='
+        style={{
+          height: "500vh"
+        }}
+        fluid
+      >
+        <Row
+          className='
                   position-fixed
                   w-100
                   h-100
                   '
-        style={{
-          flex: "1",
-          backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
-          backgroundSize: "cover",
-        }}><Col><Landing /></Col></Row>
-      <Row style={{ flex: "3" }}>
-        <Col
-          className='d-flex flex-column justify-content-start alidn-items-strech'
           style={{
-            backgroundImage: "url(background/final-background-web-png.png)",
+            flex: "1",
+            backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
             backgroundSize: "cover",
-            position: "relative",
-            marginTop: "19%",
-          }}>
-          <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-          <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-          <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-        </Col>
-      </Row>
-    </Container>
+          }}><Col><Landing /></Col></Row>
+        <Row style={{ flex: "3" }}>
+          <Col
+            className='d-flex flex-column justify-content-start alidn-items-strech'
+            style={{
+              backgroundImage: "url(background/final-background-web-png.png)",
+              backgroundSize: "cover",
+              position: "relative",
+              marginTop: "19%",
+            }}>
+            <Row style={{ flex: "1" }}><Col>asd</Col></Row>
+            <Row style={{ flex: "1" }}><Col>asd</Col></Row>
+            <Row style={{ flex: "1" }}>
+              <Col className='d-flex flex-column justify-content-end'>
+                <Footer />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container >
     </>
   );
 }
