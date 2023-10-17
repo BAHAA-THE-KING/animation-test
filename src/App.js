@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
 import { Col, Container, Row } from 'react-bootstrap';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -44,7 +45,11 @@ function App() {
           }}>
           <Row style={{ flex: "1" }}><Col>asd</Col></Row>
           <Row style={{ flex: "1" }}><Col>asd</Col></Row>
-          <Row style={{ flex: "1" }}><Col>asd</Col></Row>
+          <Row style={{ flex: "1" }}>
+            <Col className='d-flex flex-column justify-content-end'>
+              <Footer />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
