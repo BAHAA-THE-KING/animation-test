@@ -57,11 +57,28 @@ function App() {
                 <TopSingers />
               </Row>
             </Row>
-            <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-27%"}}><Landing /></Col></Row>
+            <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-27%" }}><Landing /></Col></Row>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{ flex: "1" }}>
               <Col className='d-flex flex-column justify-content-end'>
-                <Footer />
+                <Row>
+                  <span
+                    className='
+                              position-absolute
+                              text-start
+                              '
+                    style={{
+                      marginTop: "100px",
+                      color: "#020617",
+                      fontSize: "50px"
+                    }}>
+                    statistics :
+                  </span>
+                  <Nums />
+                </Row>
+                <Row>
+                  <Footer />
+                </Row>
               </Col>
             </Row>
           </Col>
