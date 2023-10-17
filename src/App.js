@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         style={{
           flex: "1",
           backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
-          backgroundSize: "cover"
-        }}><Col>asd</Col></Row>
+          backgroundSize: "cover",
+        }}><Col style={{zIndex: "100"}}><NavBar /></Col></Row>
       <Row style={{ flex: "3" }}>
         <Col
           className='d-flex flex-column justify-content-start alidn-items-strech'
