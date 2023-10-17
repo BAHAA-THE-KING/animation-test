@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
@@ -24,7 +24,6 @@ function App() {
         }}
         fluid
       >
-        <NavBar />
         <Row
           className='
                   position-fixed
