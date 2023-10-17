@@ -44,20 +44,13 @@ function App() {
               position: "relative",
               marginTop: "19%",
             }}>
-            <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-30%"}}><Landing /></Col></Row>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{}}>
               <Row style={{ height: "min-content" }}>
-                <span
-                  className='text-start'
-                  style={{
-                    color: "#020617",
-                    fontSize: "50px"
-                  }}>
-                  Top Singers :</span>
                 <TopSingers />
               </Row>
             </Row>
+            <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-27%"}}><Landing /></Col></Row>
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{ flex: "1" }}>
               <Col className='d-flex flex-column justify-content-end'>
