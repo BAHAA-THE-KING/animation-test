@@ -48,6 +48,13 @@ function App() {
             <Row style={{ flex: "1" }}><Col>asd</Col></Row>
             <Row style={{}}>
               <Row style={{ height: "min-content" }}>
+                <span
+                  className='text-start'
+                  style={{
+                    color: "#020617",
+                    fontSize: "50px"
+                  }}>
+                  Top Singers :</span>
                 <TopSingers />
               </Row>
             </Row>
