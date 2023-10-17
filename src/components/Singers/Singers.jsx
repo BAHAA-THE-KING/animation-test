@@ -8,12 +8,11 @@ function TopSingers() {
                      className="
                                 position-relative
                                 text-center
-                                my-3
                                 "
                      style={{
-                        width: "250px",
-                        height: "250px",
-                        margin: "1rem 5rem",
+                        width: "15%",
+                        aspectRatio: "1",
+                        margin: "3rem 5rem",
                         fontSize: "65px",
                         border: "10px rgb(51 65 85) solid",
                         borderRadius: "50%",

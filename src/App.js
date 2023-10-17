@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
-import { Col, Container, Navbar, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Landing from './components/navbar/landing/Landing';
 import Songs from './components/songs/Songs';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
-import TopSingers from './components/TopSingers/TopSingers';
+import TopSingers from './components/Singers/Singers';
 
 function App() {
   return (
@@ -45,14 +44,41 @@ function App() {
               position: "relative",
               marginTop: "19%",
             }}>
-            <Row style={{ flex: "1" }}><Col style={{ position: "relative", top: "-38%" }}><Landing /></Col></Row>
-            <Row style={{ flex: "1" }}><Col><Songs /></Col></Row>
+            <Row>
+              <Col style={{ position: "relative", top: "-38%" }}>
+                <Landing />
+              </Col>
+            </Row>
+            <Row style={{ flex: "1" }}>
+              <Col>
+                <Row>
+                  <span
+                    className='text-start'
+                    style={{
+                      color: "#020617",
+                      fontSize: "50px",
+                      position: "relative",
+                      left: "0"
+                    }}>Top Rated :</span>
+                  <Songs />
+                </Row>
+              </Col>
+            </Row>
             <Row style={{}}>
-              <Row style={{ height: "min-content" }}>
+              <Row style={{ height: "min-content", marginTop: "100px" }}>
+                <span
+                  className='text-start'
+                  style={{
+                    color: "#020617",
+                    fontSize: "50px"
+                  }}>Top Singers :</span>
                 <TopSingers />
               </Row>
             </Row>
-            <Row style={{ flex: "1" }}>
+            <Row style={{
+              flex: "1",
+              marginTop: "100px"
+            }}>
               <Col className='d-flex flex-column justify-content-end'>
                 <Row>
                   <span
