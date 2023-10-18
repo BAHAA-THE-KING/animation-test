@@ -1,7 +1,5 @@
 import React, { useState } from "react"
-import { motion } from "framer-motion"
 import "./NavBar.css"
-// style={{zIndex: "10", position: "fixed", width: "83%"}}
 export default function NavBar() {
 
   const [navbar, setNavBar] = useState(false);

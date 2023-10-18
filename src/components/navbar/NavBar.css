@@ -2,7 +2,7 @@
   height: 80px !important;
   transition: .4s;
 }
-.active {
+.actv {
   background-color: #423da4;
 }
 .navbar {
