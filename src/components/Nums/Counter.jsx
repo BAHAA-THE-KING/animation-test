@@ -8,7 +8,7 @@ function Counter({ value }) {
    useEffect(
       () => {
          function runAnim() {
-            if (!begin.current && document.scrollingElement.scrollTop >= 1800) {
+            if (!begin.current && window.scrollY >= 1800) {
                begin.current = true;
                inter.current = setInterval(
                   () => {

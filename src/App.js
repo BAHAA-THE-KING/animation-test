@@ -6,8 +6,21 @@ import Songs from './components/songs/Songs';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
 import TopSingers from './components/Singers/Singers';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [scroll, setScroll] = useState(0);
+  useEffect(
+    () => {
+      function scroll(e) {
+        setScroll(window.scrollY);
+      }
+      document.addEventListener("scroll", scroll);
+      return () => document.removeEventListener("scroll", scroll);
+    },
+    []
+  );
+
   return (
     <>
       <NavBar />
@@ -34,6 +47,7 @@ function App() {
             flex: "1",
             backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
             backgroundSize: "cover",
+            scale: `${1 + scroll / 1000} ${1 + scroll / 1000}`
           }}></Row>
         <Row style={{ flex: "3" }}>
           <Col

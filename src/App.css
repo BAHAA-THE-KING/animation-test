@@ -1,5 +1,11 @@
+@font-face {
+  font-family: Lato;
+  src: url('../public/fonts/Lato-Regular.ttf');
+}
+
 .App {
   text-align: center;
+  font-family: Lato;
 }
 
 .App-logo {
@@ -32,6 +38,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
