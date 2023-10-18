@@ -1,4 +1,16 @@
-div {
-  height: fit-content;
-
+.container-fluid {
+  height: 80px !important;
+  transition: .4s;
+}
+.active {
+  background-color: #423da4;
+}
+.navbar {
+  margin-top: -20px !important;
+}
+.logo {
+  margin-left: 10rem !important;
+}
+.sign {
+  margin-right: 10rem !important;
 }
