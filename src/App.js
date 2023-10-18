@@ -65,7 +65,7 @@ function App() {
               </Col>
             </Row>
             <Row style={{}}>
-              <Row style={{ height: "min-content", marginTop: "100px" }}>
+              <Row style={{ height: "min-content", marginTop: "600px" }}>
                 <span
                   className='text-start'
                   style={{
@@ -76,8 +76,7 @@ function App() {
               </Row>
             </Row>
             <Row style={{
-              flex: "1",
-              marginTop: "100px"
+              flex: "1"
             }}>
               <Col className='d-flex flex-column justify-content-end'>
                 <Row>

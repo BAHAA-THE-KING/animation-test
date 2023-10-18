@@ -1,20 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Counter({ value }) {
-   let begin = false;
-   let inter = { inter: null };
+   let begin = useRef(false);
+   let inter = useRef(null);
    const [cValue, setCValue] = useState(0);
 
    useEffect(
       () => {
          function runAnim() {
-            if (!begin && document.scrollingElement.scrollTop >= 2300) {
-               begin = true;
-               inter.inter = setInterval(
+            if (!begin.current && document.scrollingElement.scrollTop >= 1550) {
+               begin.current = true;
+               inter.current = setInterval(
                   () => {
+                     console.log("fku");
                      setCValue(
                         val => {
-                           if (val >= value) clearInterval(inter.inter);
+                           if (val >= value) clearInterval(inter.current);
                            return Math.min(
                               (val >= value - 20) ?
                                  (val + 0.3) :
