@@ -45,7 +45,7 @@ function App() {
               marginTop: "19%",
             }}>
             <Row>
-              <Col style={{ position: "relative", top: "-47%" }}>
+              <Col style={{ position: "relative", top: "-43%" }}>
                 <Landing />
               </Col>
             </Row>

@@ -5,7 +5,8 @@ export default function NavBar() {
   const [navbar, setNavBar] = useState(false);
 
   const changeBackgroundColor = () =>  {
-    if(window.scrollY >= 118) {
+    if(window.scrollY >= 100) {
+      console.log(window.scrollY);
       setNavBar(true);
     } else {
       setNavBar(false);
