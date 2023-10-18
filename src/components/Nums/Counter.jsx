@@ -1,14 +1,36 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Counter({ value }) {
+   let begin = useRef(false);
+   let inter = useRef(null);
+   const [cValue, setCValue] = useState(0);
+
    useEffect(
       () => {
-         const inter = setInterval(() => setCValue(val => Math.min((val >= value - 20) ? (val + 0.3) : (val + (value - 20) / 100), value)), 10);
-         return () => clearInterval(inter);
+         function runAnim() {
+            if (!begin.current && document.scrollingElement.scrollTop >= 1550) {
+               begin.current = true;
+               inter.current = setInterval(
+                  () => {
+                     console.log("fku");
+                     setCValue(
+                        val => {
+                           if (val >= value) clearInterval(inter.current);
+                           return Math.min(
+                              (val >= value - 20) ?
+                                 (val + 0.3) :
+                                 (val + (value - 20) / 100),
+                              value
+                           )
+                        });
+                  }, 10);
+            }
+         }
+         document.addEventListener("scroll", runAnim);
+         return () => document.removeEventListener("scroll", runAnim);
       },
       [value]
    );
-   const [cValue, setCValue] = useState(0);
 
    return (
       <div
@@ -25,7 +47,8 @@ function Counter({ value }) {
             border: "10px rgb(51 65 85) solid",
             borderRadius: "50%",
             lineHeight: "260px",
-            backgroundColor: "white"
+            backgroundColor: "white",
+            fontWeight: "bold"
          }}
       >
          {Math.round(cValue)}
