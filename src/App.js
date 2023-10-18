@@ -5,7 +5,7 @@ import Landing from './components/navbar/landing/Landing';
 import Songs from './components/songs/Songs';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
-import TopSingers from './components/Singers/Singers';
+import OurServices from './components/OurServices/OurServices';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -65,7 +65,7 @@ function App() {
             </Row>
             <Row style={{ flex: "1" }}>
               <Col>
-                <Row>
+                <Row style={{ height: "100%" }}>
                   <span
                     className='text-start'
                     style={{
@@ -85,8 +85,8 @@ function App() {
                   style={{
                     color: "#020617",
                     fontSize: "50px"
-                  }}>Top Singers :</span>
-                <TopSingers />
+                  }}>Our Services :</span>
+                <OurServices />
               </Row>
             </Row>
             <Row style={{

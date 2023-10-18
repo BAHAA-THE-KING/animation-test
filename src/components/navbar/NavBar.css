@@ -1,6 +1,5 @@
 .container-fluid {
   height: 80px !important;
-  transition: .4s;
 }
 .actv {
   background-color: #312D44;

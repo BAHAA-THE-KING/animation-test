@@ -18,11 +18,11 @@ function Counter({ value }) {
                            return Math.min(
                               (val >= value - 20) ?
                                  (val + 0.3) :
-                                 (val + (value - 20) / 100),
+                                 (val + (value - 20) / (1000 / 30)),
                               value
                            )
                         });
-                  }, 10);
+                  }, 30);
             }
          }
          document.addEventListener("scroll", runAnim);
