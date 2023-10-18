@@ -3,8 +3,9 @@ function TopSingers() {
       <div className="w-100 h-100 d-flex flex-wrap flex-row justify-content-evenly">
          {
             ["", "", "", "", "", ""].map(
-               e =>
+               (e, i) =>
                   <div
+                     key={i}
                      className="
                                 position-relative
                                 text-center

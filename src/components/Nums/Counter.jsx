@@ -8,11 +8,10 @@ function Counter({ value }) {
    useEffect(
       () => {
          function runAnim() {
-            if (!begin.current && document.scrollingElement.scrollTop >= 1550) {
+            if (!begin.current && document.scrollingElement.scrollTop >= 1800) {
                begin.current = true;
                inter.current = setInterval(
                   () => {
-                     console.log("fku");
                      setCValue(
                         val => {
                            if (val >= value) clearInterval(inter.current);
