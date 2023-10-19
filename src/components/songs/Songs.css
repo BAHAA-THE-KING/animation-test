@@ -1,11 +1,5 @@
-
-/* .songs>div>img {
-  z-index: 10000000000;
-} */
-
 .songs>div {
   position: relative;
-  /* transition: .5s; */
 }
 .songs>div>div {
   position: absolute;

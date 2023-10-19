@@ -33,7 +33,7 @@ export default function Landing() {
         <button className="rounded-pill">MUSICBOX PREMIUM</button>
         <button className="rounded-pill">MUSICBOX FREE</button>
       </div>
-      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,100%)", color: "white", fontSize: "5rem", height: "fit-content", filter: `blur(${txt}px)`, marginTop: Math.min(150,txt * 12) + "px" }}>Made By W.ever</div>
+      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,100%)", color: "white", fontSize: "5rem", height: "fit-content", filter: `blur(${txt}px)`, marginTop: Math.min(150,txt * 3) + "px", transition: ".1"}}>Made By W.ever</div>
     </>
   )
 
