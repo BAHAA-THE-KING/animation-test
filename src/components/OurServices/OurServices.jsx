@@ -11,8 +11,8 @@ function OurServices() {
                                 text-center
                                 "
                      style={{
-                        width: "15%",
-                        aspectRatio: "1",
+                        width: "250px",
+                        height: "250px",
                         margin: "3rem 5rem",
                         fontSize: "65px",
                         border: "10px rgb(51 65 85) solid",

@@ -79,15 +79,15 @@ function App() {
               </Col>
             </Row>
 
-              <Row style={{ height: "min-content", marginTop: "750px" }}>
-                <span
-                  className='text-start'
-                  style={{
-                    color: "#020617",
-                    fontSize: "50px"
-                  }}>Our Services :</span>
-                <OurServices />
-              </Row>
+            <Row style={{ height: "min-content", marginTop: "750px" }}>
+              <span
+                className='text-start'
+                style={{
+                  color: "#020617",
+                  fontSize: "50px"
+                }}>Our Services :</span>
+              <OurServices />
+            </Row>
 
             <Row style={{
               flex: "1"
