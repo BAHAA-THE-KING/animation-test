@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 import { motion, useInView, useAnimation } from "framer-motion"
 
 
-export default function Reveal({ children, durationTime }) {
+export default function Reveal({ children, durationTime, xis, yis }) {
 
   const ref = useRef(null);
   const view = useInView(ref, {once: true});
@@ -16,14 +16,14 @@ export default function Reveal({ children, durationTime }) {
 
   return (
     <>
-      <div ref={ref} style={{position:"relative"}}>  
+      <div className="text-start" ref={ref} style={{}}>  
         <motion.div
           variants={{
-            hidden: { opacity:0, x: -400 },
-            visible:{ opacity:1, x: 0 }
+            hidden: { opacity:0, x: xis, y: yis },
+            visible:{ opacity:1, x: 0, y: 0 }
           }}
           initial="hidden"
-          animate={controler}
+          animate="visible"
           transition={{duration: durationTime, delay:0.25}}
         >
           {children}

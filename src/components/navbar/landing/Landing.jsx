@@ -29,7 +29,7 @@ export default function Landing() {
 
   return (
     <>
-      <Reveal durationTime={time}>
+      <Reveal durationTime={time} xis={-400} yis={0}>
         <div className="d-flex justify-content-center align-center pt-5" style={{ width: "100%", opacity: ".1" }}>
           <img className="img-fluid" src="/assets/Landing (web) - 1-image2.png" alt="" />
         </div>

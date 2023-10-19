@@ -56,5 +56,6 @@
   border-radius: 25px;
   font-size: 3rem;
   color: white;
-  padding: 30px;
+  padding: 30px 15px;
+  cursor: pointer;
 }

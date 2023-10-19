@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
 import OurServices from './components/OurServices/OurServices';
 import { useEffect, useState } from 'react';
+import Reveal from './components/animation/Reveal';
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -66,20 +67,18 @@ function App() {
             <Row style={{ flex: "1" }}>
               <Col>
                 <Row style={{ height: "100%" }}>
-                  <span
+                  <Reveal durationTime={0.5} xis={-400} yis={0}><span
                     className='text-start'
                     style={{
-                      color: "#020617",
+                      color: "#312D44",
                       fontSize: "50px",
-                      position: "relative",
-                      left: "0"
-                    }}>Top Rated :</span>
+                    }}><span className='text-warning' >Top</span> <span style={{color: "#312D44"}}>Rated</span> : </span></Reveal>
                   <Songs />
                 </Row>
               </Col>
             </Row>
 
-            <Row style={{ height: "min-content", marginTop: "750px" }}>
+            <Row style={{ height: "min-content", marginTop: "750px"}}>
               <span
                 className='text-start'
                 style={{
@@ -87,8 +86,8 @@ function App() {
                   fontSize: "50px"
                 }}>Our Services :</span>
               <OurServices />
-            </Row>
-
+            </Row> 
+            
             <Row style={{
               flex: "1"
             }}>
