@@ -45,3 +45,16 @@
 .songs>div:hover>img {
   filter: blur(3px);
 }
+.buton {
+  outline: none;
+  border: none;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #322e45;
+  width: 400px;
+  border-radius: 25px;
+  font-size: 3rem;
+  color: white;
+  padding: 30px;
+}
