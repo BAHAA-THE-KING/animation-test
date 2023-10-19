@@ -1,17 +1,53 @@
-.ratio {
-  width: 32.33333333% !important;
-  height: 320px;
-}
 
-.songs>div>img {
+/* .songs>div>img {
   z-index: 10000000000;
-}
+} */
 
-.songs>div:hover::after {
-  content: url('./../../../public/assets/play.png');
-  width: 0;
-  height: 0;
+.songs>div {
   position: relative;
-  top: -50%;
-  left: 0;
+  /* transition: .5s; */
+}
+.songs>div>div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  z-index: 10;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: .3s;
+  z-index: -1;
+  cursor: pointer;
+}
+.songs>div:hover>div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  z-index: 10;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10;
+}
+.songs>div>div::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  border: 28px solid white;
+  border-radius: 10%;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.songs>div>img {
+  transition: .5s;
+}
+.songs>div:hover>img {
+  filter: blur(3px);
 }

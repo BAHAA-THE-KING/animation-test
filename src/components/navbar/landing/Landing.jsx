@@ -13,8 +13,6 @@ export default function Landing() {
     }, [y]
   );
 
-    // window.addEventListener('scroll', handleNavigation);
-
   useEffect(() => {
     setY(window.scrollY);
     window.addEventListener("scroll", handleNavigation);
@@ -24,18 +22,7 @@ export default function Landing() {
     };
   }, [handleNavigation]);
 
-
-  // const changeBackgroundColor = () => {
-  //   if (window.scrollY >= 100 && window.scrollY <= 288) {
-  //     setTxt((val) => val + 0.01);
-  //     console.log("val is : " + txt);
-  //   } else if (window.scrollY > 491 && window.scrollY >= 301) {
-  //     setTxt((val) => val - 0.01);
-  //   }
-  // };
-
   window.addEventListener('scroll', handleNavigation);
-
 
   return (
     <>

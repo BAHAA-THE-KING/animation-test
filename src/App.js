@@ -78,7 +78,7 @@ function App() {
                 </Row>
               </Col>
             </Row>
-            <Row style={{}}>
+
               <Row style={{ height: "min-content", marginTop: "600px" }}>
                 <span
                   className='text-start'
@@ -88,7 +88,7 @@ function App() {
                   }}>Our Services :</span>
                 <OurServices />
               </Row>
-            </Row>
+
             <Row style={{
               flex: "1"
             }}>
