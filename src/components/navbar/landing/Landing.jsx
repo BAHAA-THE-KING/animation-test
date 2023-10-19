@@ -20,6 +20,8 @@ export default function Landing() {
     }, [y]
   );
 
+    // window.addEventListener('scroll', handleNavigation);
+
   useEffect(() => {
     setY(window.scrollY);
     window.addEventListener("scroll", handleNavigation);
