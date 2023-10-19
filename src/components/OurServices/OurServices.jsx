@@ -28,7 +28,9 @@ function OurServices() {
                         transition: "0.2s"
                      }}
                   >
-                     {e}
+                     <div>
+                        {e}
+                     </div>
                   </div>
             )
          }
