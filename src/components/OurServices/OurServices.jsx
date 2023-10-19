@@ -1,4 +1,4 @@
-function TopSingers() {
+function OurServices() {
    return (
       <div className="w-100 h-100 d-flex flex-wrap flex-row justify-content-evenly">
          {
@@ -33,4 +33,4 @@ function TopSingers() {
    );
 }
 
-export default TopSingers;
+export default OurServices;

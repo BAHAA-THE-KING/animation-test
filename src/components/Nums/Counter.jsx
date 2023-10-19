@@ -8,7 +8,7 @@ function Counter({ value }) {
    useEffect(
       () => {
          function runAnim() {
-            if (!begin.current && document.scrollingElement.scrollTop >= 1800) {
+            if (!begin.current && window.scrollY >= 1800) {
                begin.current = true;
                inter.current = setInterval(
                   () => {
@@ -18,11 +18,11 @@ function Counter({ value }) {
                            return Math.min(
                               (val >= value - 20) ?
                                  (val + 0.3) :
-                                 (val + (value - 20) / 100),
+                                 (val + (value - 20) / (1000 / 30)),
                               value
                            )
                         });
-                  }, 10);
+                  }, 30);
             }
          }
          document.addEventListener("scroll", runAnim);

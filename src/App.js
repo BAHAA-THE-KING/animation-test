@@ -5,9 +5,22 @@ import Landing from './components/navbar/landing/Landing';
 import Songs from './components/songs/Songs';
 import Footer from './components/Footer/Footer';
 import Nums from './components/Nums/Nums';
-import TopSingers from './components/Singers/Singers';
+import OurServices from './components/OurServices/OurServices';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [scroll, setScroll] = useState(0);
+  useEffect(
+    () => {
+      function scroll(e) {
+        setScroll(window.scrollY);
+      }
+      document.addEventListener("scroll", scroll);
+      return () => document.removeEventListener("scroll", scroll);
+    },
+    []
+  );
+
   return (
     <>
       <NavBar />
@@ -34,6 +47,7 @@ function App() {
             flex: "1",
             backgroundImage: "url('assets/Landing (web) - 1-image3.png')",
             backgroundSize: "cover",
+            scale: `${1 + scroll / 1000} ${1 + scroll / 1000}`
           }}></Row>
         <Row style={{ flex: "3" }}>
           <Col
@@ -51,7 +65,7 @@ function App() {
             </Row>
             <Row style={{ flex: "1" }}>
               <Col>
-                <Row>
+                <Row style={{ height: "100%" }}>
                   <span
                     className='text-start'
                     style={{
@@ -71,8 +85,8 @@ function App() {
                   style={{
                     color: "#020617",
                     fontSize: "50px"
-                  }}>Top Singers :</span>
-                <TopSingers />
+                  }}>Our Services :</span>
+                <OurServices />
               </Row>
             </Row>
             <Row style={{

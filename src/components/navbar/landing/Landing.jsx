@@ -8,14 +8,7 @@ export default function Landing() {
 
   const handleNavigation = useCallback(
     e => {
-      const window = e.currentTarget;
-      if (y > window.scrollY && window.scrollY < 414) {
-        setTxt((val) => val - 0.1);
-        console.log("scrolling up");
-      } else if (y < window.scrollY && y >= 180 && y <= 288) {
-        setTxt((val) => val + 0.1);
-        console.log("scrolling down");
-      }
+      setTxt(window.scrollY / 20);
       setY(window.scrollY);
     }, [y]
   );
@@ -53,7 +46,7 @@ export default function Landing() {
         <button className="rounded-pill">MUSICBOX PREMIUM</button>
         <button className="rounded-pill">MUSICBOX FREE</button>
       </div>
-      <div style={{ position: "relative", top: "-26%", color: "white", fontSize: "5rem", height: "fit-content", filter: `blur(${txt}px)` }}>STUDIONA</div>
+      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,100%)", color: "white", fontSize: "5rem", height: "fit-content", filter: `blur(${txt}px)`, marginTop: Math.min(150,txt * 12) + "px" }}>Made By W.ever</div>
     </>
   )
 
