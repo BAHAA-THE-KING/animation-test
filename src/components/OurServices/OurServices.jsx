@@ -1,8 +1,42 @@
+import { useState, useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 import "./OurSetvices.css";
 
 function OurServices() {
+
+   const ref = useRef(null);
+   const view = useInView(ref, { once: true });
+   const controler = useAnimation();
+
+   const serviceVariant = {
+      hidden: {
+         x: 400,
+         opacity: 0
+      },
+      visible: {
+         x: 0,
+         opacity: 1,
+         transition: {
+            duratino: 0.6,
+            delay: 0.2
+         }
+      }
+
+   }
+
+   useEffect(() => {
+      if (view) {
+         controler.start("visible");
+      }
+   }, [view])
+
+
    return (
-      <div className="w-100 h-100 d-flex flex-wrap flex-row justify-content-evenly">
+      <motion.div ref={ref} className="w-100 h-100 d-flex flex-wrap flex-row justify-content-evenly"
+         variants={serviceVariant}
+         initial="hidden"
+         animate={controler}
+      >
          {
             ["", "", "", "", "", ""].map(
                (e, i) =>
@@ -34,7 +68,7 @@ function OurServices() {
                   </div>
             )
          }
-      </div>
+      </motion.div>
    );
 }
 
