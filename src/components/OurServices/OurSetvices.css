@@ -2,3 +2,15 @@
    background-color: #312D44 !important;
    filter: drop-shadow(0px 0 6px #AAA) !important;
 }
+
+.nota:hover div:nth-child(1) {
+   height: 0 !important;
+}
+
+.nota:hover div:nth-child(2) {
+   height: 65% !important;
+}
+
+.nvis {
+   height: 0 !important;
+}
