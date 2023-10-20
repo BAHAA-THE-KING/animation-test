@@ -18,7 +18,7 @@ function OurServices() {
          opacity: 1,
          transition: {
             duratino: 0.6,
-            delay: 0.2
+            delay: 0.5
          }
       }
 
@@ -46,10 +46,10 @@ function OurServices() {
                      <div
                         key={e + (i + 1)}
                         className="
-                                position-relative
-                                text-center
-                                nota
-                                "
+                              position-relative
+                              text-center
+                              nota
+                              "
                         style={{
                            width: "250px",
                            height: "250px",
@@ -94,7 +94,7 @@ function OurServices() {
                            fontSize: "30px"
                         }}
                      >
-                        {e + (i + 1)}
+                        {e +" " +(i + 1)}
                      </div>
                   </div>
             )

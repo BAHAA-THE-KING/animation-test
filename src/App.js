@@ -78,7 +78,7 @@ function App() {
               </Col>
             </Row>
 
-            <Row style={{ height: "min-content", marginTop: "750px"}}>
+            <Row style={{ height: "min-content", marginTop: "700px"}}>
               <span
                 className='text-start'
                 style={{

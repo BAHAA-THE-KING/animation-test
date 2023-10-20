@@ -50,7 +50,7 @@
   border: none;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   background-color: #322e45;
   width: 300px;
   border-radius: 10px;
