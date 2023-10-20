@@ -16,7 +16,7 @@ export default function Reveal({ children, durationTime, xis, yis }) {
 
   return (
     <>
-      <div className="text-start" ref={ref} style={{}}>  
+      <div className="text-start" ref={ref}>  
         <motion.div
           variants={{
             hidden: { opacity:0, x: xis, y: yis },

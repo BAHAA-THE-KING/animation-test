@@ -78,14 +78,14 @@ function App() {
               </Col>
             </Row>
 
-            <Row style={{ height: "min-content", marginTop: "700px"}}>
+            <Row style={{ height: "min-content", marginTop: "700px", overflow:"hidden"}}>
               <span
                 className='text-start'
                 style={{
                   color: "#020617",
                   fontSize: "50px"
                 }}>Our Services :</span>
-              <OurServices />
+              <div style={{position:"relative"}}><OurServices /></div>
             </Row> 
             
             <Row style={{
