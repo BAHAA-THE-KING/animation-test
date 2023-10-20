@@ -16,15 +16,7 @@
   cursor: pointer;
 }
 .songs>div:hover>div {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: gray;
-  z-index: 10;
   top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
   z-index: 10;
 }
 .songs>div>div::before {
@@ -50,7 +42,6 @@
   border: none;
   margin: auto;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
   background-color: #322e45;
   width: 300px;
   border-radius: 10px;

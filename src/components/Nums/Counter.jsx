@@ -10,7 +10,7 @@ function Counter({ value }) {
    useEffect(
       () => {
          function runAnim() {
-            if (!begin.current && window.scrollY >= 1670) {
+            if (!begin.current && window.scrollY >= 2350) {
                begin.current = true;
                inter.current = setInterval(
                   () => {

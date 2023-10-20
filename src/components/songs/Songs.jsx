@@ -65,8 +65,9 @@ export default function Songs() {
     <div className="container-fluid">
       <div ref={ref} className="row songs">
         {
-          [1, 2, 3].map((ele) => (
+          [1, 2, 3].map((ele, i) => (
             <motion.div className="col-4 mb-4"
+              key={i}
               variants={childVariant1}
               initial="hidden"
               animate={controler}
@@ -77,8 +78,9 @@ export default function Songs() {
           ))
         }
         {
-          [1, 2, 3].map((ele) => (
+          [1, 2, 3].map((ele,i) => (
             <motion.div ref={ref} className="col-4 mb-4"
+            key={i}
               variants={childVariant2}
               initial="hidden"
               animate={controler}
