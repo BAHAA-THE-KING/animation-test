@@ -27,7 +27,6 @@ function Counter({ value }) {
                   }, 30);
             }
             if (window.scrollY >= 2222) { setFade(true); }
-            else if (window.scrollY < 2200) { setFade(false); }
          }
          document.addEventListener("scroll", runAnim);
          return () => document.removeEventListener("scroll", runAnim);
@@ -62,7 +61,7 @@ function Counter({ value }) {
                justifyContent: "center",
                alignItems: "center"
             }}>
-            <div className="ctr" style={{ transition: "0.5s", position: "absolute", top: "70%", opacity: "0.1" }}>
+            <div className="ctr" style={{ transition: "1s", position: "absolute", top: "70%", opacity: "0.1" }}>
                {Math.round(cValue)}
             </div>
          </div>
