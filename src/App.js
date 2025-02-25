@@ -52,7 +52,7 @@ function App() {
           }}></Row>
         <Row style={{ flex: "3" }}>
           <Col
-            className='d-flex flex-column justify-content-start alidn-items-strech'
+            className='d-flex flex-column justify-content-start align-items-stretch'
             style={{
               backgroundImage: "url(background/final-background-web-png.png)",
               backgroundSize: "cover",
