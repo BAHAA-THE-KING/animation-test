@@ -1,5 +1,6 @@
-import "./Counter.css";
 import { useEffect, useRef, useState } from "react";
+
+import "./Counter.css";
 
 function Counter({ value }) {
   let begin = useRef(false);
